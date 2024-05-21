@@ -119,6 +119,9 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("New Game")
             {_,_->
                 clearBoard()
+                // Set first turn to X on new game
+                currentTurn = playerTurn.X
+                setTurnText()
             }
 
             .show()
