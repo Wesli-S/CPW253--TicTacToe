@@ -48,6 +48,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.newGameButton.setOnClickListener {
             clearBoard()
+            // Set first turn to X on new game
+            currentTurn = playerTurn.X
+            setTurnText()
         }
 
 
